@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050507">
+  <meta name="description" content="ShelfWise is a University of Utah senior capstone project connecting store layouts, product information, shoppers, and staff through interactive maps.">
+  <title>ShelfWise — Every shelf. In sight.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="https://rsms.me/inter/font-files/InterVariable.woff2?v=4.1" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="site.css">
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
+</head>
+<body>
+  <canvas id="glass" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#headline">Skip to content</a>
+  <main id="hero" aria-label="ShelfWise project overview">
+    <nav id="navigation" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="ShelfWise home"><span class="brand-mark" aria-hidden="true"></span><span data-print>ShelfWise</span></a>
+      <div class="nav-links"><a href="about.html" data-print>About</a><span data-print>·</span><a href="team.html" data-print>Team</a><span data-print>·</span><a href="tutorial.html" data-print>Tutorial</a></div>
+      <a class="sign-in" href="https://shelfwise-nxbo.onrender.com/" target="_blank" rel="noopener noreferrer" data-print>Open app ↗</a>
+    </nav>
+    <section id="panel" aria-labelledby="headline">
+      <p class="eyebrow" data-print>UNIVERSITY OF UTAH · SENIOR CAPSTONE</p>
+      <h1 id="headline" tabindex="-1"><span data-print>Every shelf.</span><span data-print>In sight.</span></h1>
+      <p class="description"><span data-print>An interactive store map connecting people, products, and places.</span><span data-print>Built for shoppers, staff, and the way stores work.</span></p>
+      <div class="actions"><a class="studio-button" href="https://shelfwise-nxbo.onrender.com/" target="_blank" rel="noopener noreferrer" data-print>Explore app ↗</a><a class="paper-link" href="about.html" data-action="paper" data-print>Meet ShelfWise →</a></div>
+      <footer><span data-print>Senior Capstone · Spring 2026</span><span data-print>React · Node.js · PostgreSQL</span></footer>
+    </section>
+  </main>
+  <section id="paper" aria-labelledby="paper-title" hidden inert>
+    <button id="back" type="button">← Back</button>
+    <article class="definitions project-reveal">
+      <p class="reveal-label">THE PROJECT</p>
+      <h2 id="paper-title" tabindex="-1">A shared map.<br>A clearer store.</h2>
+      <p>Finding a product shouldn’t depend on finding the right person. ShelfWise brings store layouts and product information together, helping shoppers find their way and staff keep everyone on the same page.</p>
+      <p>Managers create the layout. Employees maintain the details. Shoppers explore the same visual guide—with product locations, availability, pricing, and promotions in context.</p>
+      <p>Built by Will Black, Conner Francis, Bradley Lund, and Yi Yang for the University of Utah’s senior capstone.</p>
+      <div class="reveal-links"><a href="about.html">About the project <span>↗</span></a><a href="team.html">Meet the team <span>↗</span></a><a href="tutorial.html">User tutorial <span>↗</span></a></div>
+    </article>
+  </section>
+  <noscript><style>#glass{display:none}</style></noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

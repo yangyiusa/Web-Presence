@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T21:55:53.511763Z",
+  "title": "Design System: ShelfWise",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Near-black ground"
+      },
+      "glass": {
+        "role": "neutral",
+        "displayName": "Smoked charcoal"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Pale printed ink"
+      },
+      "ink-end": {
+        "role": "neutral",
+        "displayName": "Soft ink gradient end"
+      },
+      "copy": {
+        "role": "neutral",
+        "displayName": "Hero supporting ink"
+      },
+      "metadata": {
+        "role": "neutral",
+        "displayName": "Hero metadata"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted metadata"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Section divider"
+      },
+      "action-hover": {
+        "role": "primary",
+        "displayName": "Action green"
+      },
+      "focus": {
+        "role": "secondary",
+        "displayName": "Lavender focus"
+      },
+      "selection": {
+        "role": "secondary",
+        "displayName": "Selection blue"
+      },
+      "button-ink": {
+        "role": "neutral",
+        "displayName": "Dark action ink"
+      },
+      "reading-copy": {
+        "role": "neutral",
+        "displayName": "Reading copy"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Glass display"
+      },
+      "page-heading": {
+        "displayName": "Page introduction"
+      },
+      "section-heading": {
+        "displayName": "Editorial heading"
+      },
+      "body": {
+        "displayName": "Reading copy"
+      },
+      "hero-copy": {
+        "displayName": "Hero supporting copy"
+      },
+      "label": {
+        "displayName": "Capstone eyebrow"
+      }
+    },
+    "motion": [
+      {
+        "name": "action-hover",
+        "value": "background .15s",
+        "purpose": "Static primary-action feedback."
+      },
+      {
+        "name": "reveal-fade",
+        "value": "opacity .4s; begins after .28s",
+        "purpose": "Project reveal follows departing glass."
+      },
+      {
+        "name": "shatter",
+        "value": ".72s cubic; .025s stagger",
+        "purpose": "Six pieces fly outward."
+      },
+      {
+        "name": "reassembly",
+        "value": ".72s easeOutBack; .03s stagger",
+        "purpose": "Glass returns with small overshoot."
+      },
+      {
+        "name": "hover-spring",
+        "value": "stiffness 170; damping 19",
+        "purpose": "Independent shard lift and local tilt."
+      },
+      {
+        "name": "live-cuts",
+        "value": "approximately 45 updates/s; 10-20s periods",
+        "purpose": "Cut junctions drift slowly."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "reading-medium",
+        "value": "1000px"
+      },
+      {
+        "name": "reading-mobile",
+        "value": "700px"
+      },
+      {
+        "name": "glass-portrait",
+        "value": "(orientation: portrait)"
+      },
+      {
+        "name": "glass-narrow",
+        "value": "360px"
+      },
+      {
+        "name": "reduced-motion",
+        "value": "(prefers-reduced-motion: reduce)"
+      }
+    ],
+    "geometry": {
+      "scale": "blockWidth / 1730",
+      "cornerRadius": "20 * scale",
+      "depth": "13 * scale",
+      "bevel": "2.6 * scale",
+      "cameraFov": "30deg",
+      "roughness": 0.36,
+      "clearcoat": 0.7,
+      "iridescence": 0.55
+    },
+    "interaction": {
+      "print": "Canvas UVs and projective semantic DOM overlays share one content source. UV hit testing activates the real anchor on a lifted shard.",
+      "reveal": "Meet ShelfWise opens the project reveal; Back or Escape returns and restores focus. The no-script anchor opens About.",
+      "tutorial": "Five tabs use roving tabindex, aria-selected, wrapping arrow keys, Home/End, panel labels, and polite live updates. Complete ordered instructions remain in HTML.",
+      "fallback": "Initial reduced motion skips WebGL. Setup failure, context loss, or enabling reduced motion restores styled HTML. Reading pages and full text instructions work without scripts."
+    },
+    "assets": {
+      "provenance": "assets/README.md",
+      "team": "User-supplied photograph; CSS portraits use that same image. Confirmed left-to-right order: Will Black, Conner Francis, Bradley Lund, Yi Yang.",
+      "screenshots": "Four actual guest-workflow screenshots captured from the supplied ShelfWise deployment on 2026-11-15.",
+      "placeholders": "Degree/program and contact/LinkedIn remain explicitly unfinished at the user request."
+    }
+  },
+  "components": [
+    {
+      "name": "Explore app action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Static equivalent of the glass-printed application link.",
+      "html": "<a class=\"ds-action\" href=\"https://shelfwise-nxbo.onrender.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Explore app</a>",
+      "css": ".ds-action{display:inline-flex;align-items:center;justify-content:center;background:#dcdce0;color:#19191c;width:calc(116px * var(--s,1));height:calc(40px * var(--s,1));min-height:30px;border-radius:calc(6px * var(--s,1));font:500 13px Inter,Arial,sans-serif;text-decoration:none;transition:background .15s}.ds-action:hover{background:var(--green,#36d67e)}.ds-action:focus-visible{outline:2px solid var(--lavender,#b9abff);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-action{transition:none}}"
+    },
+    {
+      "name": "Reading-page action",
+      "kind": "button",
+      "refersTo": "button-reading",
+      "description": "Pale compact link at the close of a reading page.",
+      "html": "<a class=\"ds-reading\" href=\"tutorial.html\">User tutorial</a>",
+      "css": ".ds-reading{display:inline-flex;align-items:center;justify-content:center;gap:25px;background:#dcdce0;color:#17171c;padding:13px 17px;border-radius:6px;font:500 12px Inter,Arial,sans-serif;text-decoration:none}.ds-reading:hover{background:var(--green,#36d67e)}.ds-reading:focus-visible{outline:2px solid var(--lavender,#b9abff);outline-offset:6px}"
+    },
+    {
+      "name": "Project reveal link",
+      "kind": "button",
+      "refersTo": "reveal-link",
+      "description": "Secondary opening action retains the About destination without scripts.",
+      "html": "<a class=\"ds-reveal\" href=\"about.html\">Meet ShelfWise</a>",
+      "css": ".ds-reveal{display:inline-block;color:#b8b8c0;padding:10px 0;font:400 13px Inter,Arial,sans-serif;text-decoration:none}.ds-reveal:hover{text-decoration:underline;text-underline-offset:5px}.ds-reveal:focus-visible{outline:2px solid var(--lavender,#b9abff);outline-offset:6px}"
+    },
+    {
+      "name": "Reading navigation",
+      "kind": "nav",
+      "description": "Shared dark header with an underlined current page.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a class=\"ds-brand\" href=\"index.html\">ShelfWise</a><div class=\"ds-links\"><a href=\"about.html\" aria-current=\"page\">About</a><a href=\"team.html\">Team</a><a href=\"tutorial.html\">Tutorial</a></div><a class=\"ds-launch\" href=\"https://shelfwise-nxbo.onrender.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Open app</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:30px;min-height:84px;padding:20px 38px;border:1px solid #414148;border-radius:13px;background:linear-gradient(145deg,#25262a,#17171c);font:400 13px Inter,Arial,sans-serif}.ds-nav a{color:#a4a4ae;text-decoration:none}.ds-nav .ds-brand{color:#dcdce0;font-size:23px;font-weight:500;letter-spacing:-.04em}.ds-links{display:flex;gap:30px;margin:auto}.ds-links a{padding:10px 0}.ds-nav a:hover,.ds-links a[aria-current=page]{color:#f0f0f5}.ds-links a[aria-current=page]{text-decoration:underline;text-decoration-color:var(--green,#36d67e);text-underline-offset:8px}.ds-nav a:focus-visible{outline:2px solid var(--lavender,#b9abff);outline-offset:6px}.ds-launch{white-space:nowrap;font-size:12px}@media(max-width:700px){.ds-nav{flex-wrap:wrap;padding:17px 18px;gap:14px}.ds-links{order:3;flex-basis:100%;justify-content:center;border-top:1px solid #36363e;padding-top:5px;margin-top:3px;gap:32px}.ds-launch{margin-left:auto}}"
+    },
+    {
+      "name": "Tutorial tab",
+      "kind": "button",
+      "refersTo": "guide-tab-selected",
+      "description": "Selected numbered step; production JavaScript supplies tab switching and keyboard behavior.",
+      "html": "<button class=\"ds-tab\" type=\"button\" role=\"tab\" aria-selected=\"true\"><span>01</span>Choose a store</button>",
+      "css": ".ds-tab{border:0;border-bottom:2px solid var(--green,#36d67e);background:none;color:#e6e6ed;padding:18px 12px;font:400 12px Inter,Arial,sans-serif;text-align:left;white-space:nowrap;cursor:pointer}.ds-tab span{font-size:10px;margin-right:12px;color:var(--green,#36d67e);font-variant-numeric:tabular-nums}.ds-tab:hover{color:#fff}.ds-tab:focus-visible{outline:2px solid var(--lavender,#b9abff);outline-offset:6px}"
+    },
+    {
+      "name": "FAQ disclosure",
+      "kind": "custom",
+      "description": "Native disclosure remains operable without JavaScript.",
+      "html": "<details class=\"ds-faq\"><summary>Do I need an account or an app download?</summary><p>You can explore store maps as a guest in your browser. Sign in to keep a shopping list.</p></details>",
+      "css": ".ds-faq{padding:20px 0;border-top:1px solid var(--line,#303037);border-bottom:1px solid var(--line,#303037);font:400 13px Inter,Arial,sans-serif}.ds-faq summary{cursor:pointer;color:#d1d1db;line-height:1.6}.ds-faq summary::marker{color:var(--green,#36d67e)}.ds-faq summary:hover{color:#fff}.ds-faq summary:focus-visible{outline:2px solid var(--lavender,#b9abff);outline-offset:6px}.ds-faq p{color:#a4a4b1;max-width:78ch;margin:16px 0 0;line-height:1.8}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Designed in glass",
+    "overview": "ShelfWise adapts the existing smoked-glass template into a capstone project presence. Near-black ground, pale Inter typography, quiet spectral reflections, and restrained green accents connect the opening to the dark editorial pages. The opening keeps its moving cut network, independent shard hover, and reversible shatter; long-form content uses normal document flow.",
+    "keyCharacteristics": [
+      "Live beveled glass on the opening, with selectable semantic text.",
+      "Readable editorial layouts for project details, biographies, and instructions.",
+      "Actual product screenshots and the supplied team photograph.",
+      "Clear keyboard focus, reduced-motion fallback, and complete text content."
+    ],
+    "rules": [
+      {
+        "name": "The Printed Ink Rule",
+        "body": "Keep canvas lettering and semantic HTML synchronized, including hover and focus feedback.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do preserve the live opening and its synchronized semantic controls.",
+      "Do keep long text in readable, scrolling editorial layouts.",
+      "Do use actual screenshots and the supplied photograph with asset provenance.",
+      "Do preserve explicit degree and contact placeholders until teammates supply details.",
+      "Do retain full text instructions, keyboard tabs, and reduced-motion/static access."
+    ],
+    "donts": [
+      "Don't substitute invented product screenshots or inferred personal details.",
+      "Don't imply that planned project features were verified in the live application.",
+      "Don't add download requirements to the linked browser workflow."
+    ]
+  }
+}
