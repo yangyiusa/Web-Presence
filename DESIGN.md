@@ -140,7 +140,7 @@ One rounded navigation slab sits above five rounded polygon shards. Convex offse
 
 **Live glass and project reveal.** Printed canvas textures and selectable DOM links share one source. UV raycasting activates the real link under each independently lifted shard. Non-corner junctions drift over 10–20 second periods, rebuilt at approximately 45 updates per second. Hover uses a damped spring and local tilt. Meet ShelfWise shatters the glass to reveal a concise project introduction and links; Back or Escape reassembles it. Focus moves to the reveal title and returns to the triggering link. Without JavaScript, the same anchor leads to About.
 
-**Reading media and team.** Use the four actual application screenshots and the user-supplied team image. Portraits are CSS crops of that same photograph. The confirmed photo and biography order is Will Black, Conner Francis, Bradley Lund, Yi Yang. Each biography has a role label and explicitly unfinished degree/program and contact/LinkedIn fields. Asset origins and capture dates are recorded in [assets/README.md](assets/README.md); preserve them when updating media.
+**Reading media and team.** Use the four actual application screenshots and the user-supplied team image. Portraits are CSS crops of that same photograph. The confirmed photo and biography order is Will Black, Conner Francis, Bradley Lund, Yi Yang. Each biography has a role label and degree/program, expected graduation, and contact/LinkedIn fields. Asset origins and capture dates are recorded in [assets/README.md](assets/README.md); preserve them when updating media.
 
 **Tutorial.** Five numbered tabs pair screenshots with short instructions, a step counter, and Previous/Next controls. Selected tabs use a green lower rule; the first Previous control is disabled. Arrow keys wrap between tabs, and Home/End select the first/last step. Selection updates `aria-selected`, roving `tabindex`, the panel label, alt text, and a polite live region. The complete ordered tutorial and native FAQ disclosures remain readable without JavaScript. Guest browsing and signed-in shopping lists are distinguished in the copy.
 
@@ -152,7 +152,7 @@ One rounded navigation slab sits above five rounded polygon shards. Convex offse
 - **Do** preserve the live opening and its synchronized semantic controls.
 - **Do** keep long text in readable, scrolling editorial layouts.
 - **Do** use actual screenshots and the supplied photograph with asset provenance.
-- **Do** preserve explicit degree and contact placeholders until teammates supply details.
+- **Do** preserve contact placeholders until teammates supply details.
 - **Do** retain full text instructions, keyboard tabs, and reduced-motion/static access.
 
 ### Don't:

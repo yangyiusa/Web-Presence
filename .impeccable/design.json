@@ -151,7 +151,7 @@
       "provenance": "assets/README.md",
       "team": "User-supplied photograph; CSS portraits use that same image. Confirmed left-to-right order: Will Black, Conner Francis, Bradley Lund, Yi Yang.",
       "screenshots": "Four actual guest-workflow screenshots captured from the supplied ShelfWise deployment on 2026-11-15.",
-      "placeholders": "Degree/program and contact/LinkedIn remain explicitly unfinished at the user request."
+      "placeholders": "Degree/program and December 2026 graduation are confirmed for all four members. Contact/LinkedIn remain unfinished except Yi’s supplied email."
     }
   },
   "components": [
@@ -222,7 +222,7 @@
       "Do preserve the live opening and its synchronized semantic controls.",
       "Do keep long text in readable, scrolling editorial layouts.",
       "Do use actual screenshots and the supplied photograph with asset provenance.",
-      "Do preserve explicit degree and contact placeholders until teammates supply details.",
+      "Do preserve contact placeholders until teammates supply details.",
       "Do retain full text instructions, keyboard tabs, and reduced-motion/static access."
     ],
     "donts": [

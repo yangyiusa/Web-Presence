@@ -33,7 +33,7 @@ for (const page of pages) {
   assert.ok(content.includes('ShelfWise'), `${page} must identify the project`);
   assert.ok(!content.includes('Facet'), `${page} must not retain template copy`);
   for (const [, path] of content.matchAll(/(?:href|src)="([^"]+)"/g)) {
-    if (/^(https?:|data:|#)/.test(path)) continue;
+    if (/^(https?:|mailto:|data:|#)/.test(path)) continue;
     assert.ok(existsSync(new URL(path.split('#')[0], import.meta.url)), `${page}: missing ${path}`);
   }
 }
