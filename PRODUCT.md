@@ -21,10 +21,10 @@ The supplied application URL is https://shelfwise-nxbo.onrender.com/. The guest 
 Adapt the previously built smoked-glass template to ShelfWise. Preserve the live cut network, hover response, and shatter/reassembly on the opening. Use readable pages for detailed About, Team, and Tutorial content. Use the supplied team photo and actual screenshots rather than fabricated product visuals.
 
 ## Team Content
-Photo order confirmed by the user: Will, Conner, Bradley, Yi, left to right. Project-role bios are grounded in section 3.2 of the supplied design document and are 150–250 words each. The user confirmed undergraduate / Computer Science and expected graduation in December 2026 for all four members. Yi’s supplied public email is yangyius@gmail.com. Other contact and LinkedIn fields remain placeholders until provided.
+Photo order confirmed by the user: Will, Conner, Bradley, Yi, left to right. Project-role bios are grounded in section 3.2 of the supplied design document and are 150–250 words each. The user confirmed undergraduate / Computer Science and expected graduation in December 2026 for all four members. Public emails supplied by the user: Will — will@bblackmail.com; Conner — connerfrancis.04@gmail.com; Yi — yangyius@gmail.com. LinkedIn profiles supplied by the user: Conner — https://www.linkedin.com/in/conner-francis-john; Yi — https://www.linkedin.com/in/yangyiusa. Remaining contact fields stay as placeholders until provided.
 
 ## Delivery
 The static project site links to the existing deployed application. A new public hosting destination has not been provided; local implementation does not imply publication. Downloads are omitted because reviewers can use the browser application.
 
 ## Accessibility
-Selectable hero text, real navigation links, keyboard controls, reduced-motion/static WebGL fallback. Detail pages and the full text tutorial work without JavaScript.
+Home-screen text is unselectable at the user's request. Real navigation links, keyboard controls, and reduced-motion/static WebGL fallback remain available. Detail pages and the full text tutorial work without JavaScript.

@@ -20,7 +20,7 @@ Run `node verify.mjs` for geometry/easing, local-link integrity, biography word 
 
 ## Before publishing
 
-All four members are listed as undergraduate Computer Science students with expected graduation in December 2026. Yi’s email is provided; replace the remaining contact/LinkedIn placeholders in `team.html` as teammates supply details. No addresses or personal details have been invented. The current bios are editorial drafts based on the supplied project responsibilities.
+All four members are listed as undergraduate Computer Science students with expected graduation in December 2026. Will’s and Conner’s emails, Yi’s email, and Conner’s and Yi’s LinkedIn profiles are provided; replace the remaining contact/LinkedIn placeholders in `team.html` as teammates supply details. No addresses or personal details have been invented. The current bios are editorial drafts based on the supplied project responsibilities.
 
 Publish the root HTML/CSS/JS files and `assets/` to a static host. Do not publish `.impeccable/`, which contains local review artifacts. The existing Render application is a separate site and is not changed by this project.
 

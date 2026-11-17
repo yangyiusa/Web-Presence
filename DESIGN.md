@@ -97,7 +97,7 @@ components:
 ShelfWise adapts the existing smoked-glass template into a capstone project presence. Near-black ground, pale Inter typography, quiet spectral reflections, and restrained green accents connect the opening to the dark editorial pages. The opening keeps its moving cut network, independent shard hover, and reversible shatter; long-form content uses normal document flow.
 
 **Key Characteristics:**
-- Live beveled glass on the opening, with selectable semantic text.
+- Live beveled glass on the opening, with unselectable semantic text and keyboard-accessible links.
 - Readable editorial layouts for project details, biographies, and instructions.
 - Actual product screenshots and the supplied team photograph.
 - Clear keyboard focus, reduced-motion fallback, and complete text content.
@@ -138,7 +138,7 @@ One rounded navigation slab sits above five rounded polygon shards. Convex offse
 
 **Navigation and actions.** About, Team, and Tutorial are real page links; current reading-page navigation has an underline and `aria-current`. Open app and Explore app lead to the supplied browser deployment at `https://shelfwise-nxbo.onrender.com/`, opening a new tab with `noopener noreferrer`. No download is required. Pale primary actions turn green on hover; keyboard focus has a lavender outline with a 6px offset. The secondary opening link underlines on hover.
 
-**Live glass and project reveal.** Printed canvas textures and selectable DOM links share one source. UV raycasting activates the real link under each independently lifted shard. Non-corner junctions drift over 10–20 second periods, rebuilt at approximately 45 updates per second. Hover uses a damped spring and local tilt. Meet ShelfWise shatters the glass to reveal a concise project introduction and links; Back or Escape reassembles it. Focus moves to the reveal title and returns to the triggering link. Without JavaScript, the same anchor leads to About.
+**Live glass and project reveal.** Printed canvas textures and semantic DOM links share one source. Home-screen text selection is disabled through CSS while pointer and keyboard link activation remain available. UV raycasting activates the real link under each independently lifted shard. Non-corner junctions drift over 10–20 second periods, rebuilt at approximately 45 updates per second. Hover uses a damped spring and local tilt. Meet ShelfWise shatters the glass to reveal a concise project introduction and links; Back or Escape reassembles it. Focus moves to the reveal title and returns to the triggering link. Without JavaScript, the same anchor leads to About.
 
 **Reading media and team.** Use the four actual application screenshots and the user-supplied team image. Portraits are CSS crops of that same photograph. The confirmed photo and biography order is Will Black, Conner Francis, Bradley Lund, Yi Yang. Each biography has a role label and degree/program, expected graduation, and contact/LinkedIn fields. Asset origins and capture dates are recorded in [assets/README.md](assets/README.md); preserve them when updating media.
 

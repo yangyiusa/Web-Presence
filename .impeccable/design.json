@@ -151,7 +151,7 @@
       "provenance": "assets/README.md",
       "team": "User-supplied photograph; CSS portraits use that same image. Confirmed left-to-right order: Will Black, Conner Francis, Bradley Lund, Yi Yang.",
       "screenshots": "Four actual guest-workflow screenshots captured from the supplied ShelfWise deployment on 2026-11-15.",
-      "placeholders": "Degree/program and December 2026 graduation are confirmed for all four members. Contact/LinkedIn remain unfinished except Yi’s supplied email."
+      "placeholders": "Degree/program and December 2026 graduation are confirmed for all four members. Contact/LinkedIn remain unfinished except Will’s, Conner’s, and Yi’s supplied emails and Conner’s and Yi’s supplied LinkedIn profiles."
     }
   },
   "components": [
@@ -206,7 +206,7 @@
     "northStar": "Designed in glass",
     "overview": "ShelfWise adapts the existing smoked-glass template into a capstone project presence. Near-black ground, pale Inter typography, quiet spectral reflections, and restrained green accents connect the opening to the dark editorial pages. The opening keeps its moving cut network, independent shard hover, and reversible shatter; long-form content uses normal document flow.",
     "keyCharacteristics": [
-      "Live beveled glass on the opening, with selectable semantic text.",
+      "Live beveled glass on the opening, with unselectable semantic text and keyboard-accessible links.",
       "Readable editorial layouts for project details, biographies, and instructions.",
       "Actual product screenshots and the supplied team photograph.",
       "Clear keyboard focus, reduced-motion fallback, and complete text content."
